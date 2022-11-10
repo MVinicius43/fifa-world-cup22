@@ -1,11 +1,11 @@
 import { NativeBaseProvider, Box } from 'native-base'
+import { Routes } from './routes';
+import { THEME } from './styles/theme';
 
 export default function App() {
   return (
-    <NativeBaseProvider>
-      <Box flex={1} justifyContent="center" alignItems="center">
-        Hello world
-      </Box>
+    <NativeBaseProvider theme={THEME}>
+      <Routes />
     </NativeBaseProvider>
   );
 }
